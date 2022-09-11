@@ -15,17 +15,72 @@
         <h1 class="text-center text-white bg-primary bg-gradient">Weather Dashboard</h1>
     </header>
 
-    <section class="search-column">
-        <h2>Search for a City: </h2>
-        <form>
-            <label for="search"></label>
-            <input type="text" name="search" placeholder="San Diego">
-        </form>
-        <button>Search</button>
+    <section class="row">
+        <section class="search-column col-4 border border-4">
+            <h2>Search for a City: </h2>
+            <form>
+                <label for="search"></label>
+                <input id='city-input' type="text" name="search" placeholder="San Diego">
+            </form>
+            <button class="btn btn-primary search-btn" type="submit">Search</button>
 
-        <div class="search-history">
-            <!-- Where the search history will populate  -->
-        </div>
+            <div>
+                <ul class="search-history">
+                <!-- Where the search history will populate  -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="weather-info col-8 border border-4">
+            <div class="current-weather">
+                <!-- Temp, wind, humidity, UV index  -->
+                <div class="card border-dark mb-3" style="max-width;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="future-weather row">
+                <!-- Temp, wind, humidity  -->
+                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Dark card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
     </section>
 
     <script src="./Assets/script.js"></script>

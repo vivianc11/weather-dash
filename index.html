@@ -16,11 +16,11 @@
     </header>
 
     <section class="row">
-        <section class="search-column col-4 border border-4">
+        <section class="search-column col-3 border border-4">
             <h2>Search for a City: </h2>
             <form>
                 <label for="search"></label>
-                <input id='city-input' type="text" name="search" placeholder="San Diego">
+                <input class='input-group' id='city-input' type="text" name="search" placeholder="San Diego">
             </form>
             <button class="btn btn-primary search-btn" type="submit">Search</button>
 
@@ -31,58 +31,37 @@
             </div>
         </section>
 
-        <section class="weather-info col-8 border border-4">
+        <section class="weather-info col-9 border border-4">
             <div class="current-weather">
                 <!-- Temp, wind, humidity, UV index  -->
                 <div class="card border-dark mb-3" style="max-width;">
-                    <div class="card-header">Header</div>
                     <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h2 class="card-title location-date">Dark card title </h2>
+                      <img class="weather-icon" alt="weather icon">
+                      <p class="card-text current-temp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text current-wind"></p>
+                      <p class="card-text current-humidity"></p>
+                      <p class="card-text current-UV"></p>
                     </div>
                 </div>
             </div>
             <div class="future-weather row">
                 <!-- Temp, wind, humidity  -->
-                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
+                <!-- <div class="card border-dark mx-3 col-2" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <img src="" alt="weather icon">
+                      <p class="card-text temp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text wind"></p>
+                      <p class="card-text humidity"></p>
                     </div>
-                </div>
-                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-dark mx-2 col-2" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                      <h5 class="card-title">Dark card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>    
+                </div> -->
+                   
             </div>
         </section>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./config.js"></script>
     <script src="./Assets/script.js"></script>
 </body>
 </html>

@@ -7,41 +7,42 @@
     <title>Weather Dashboard</title>
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+    <!-- Personal CSS  -->
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
+
 <body>
     <header>
         <h1 class="text-center text-white bg-primary bg-gradient">Weather Dashboard</h1>
         <h2 class="current-date text-center"></h2>
     </header>
-
+ <!-- Search input and search history  -->
     <section class="row">
         <section class="search-column col-3 border-end border-3">
-            <h3 class="">Search for a City: </h3>
+            <h3 class="ms-3">Search for a City: </h3>
             <form>
                 <label for="search"></label>
-                <input class='input-group' id='city-input' type="text" name="search" placeholder="San Diego">
+                <input class='ms-2 input-group' id='city-input' type="text" name="search" placeholder="San Diego">
             </form>
             <div class="d-grid gap-2">
-                <button class="btn btn-primary my-2 search-btn" type="submit">Search</button>
+                <button class="btn btn-primary ms-3 my-2 search-btn" type="submit">Search</button>
             </div>
 
             <div>
-                <p>Search History: </p>
+                <p class="ms-3">Search History: </p>
                 <ul class="search-history">
                 <!-- Where the search history will populate  -->
                 </ul>
             </div>
         </section>
-
+        <!-- Weather information  -->
         <section class="weather-info col-9">
             <div class="current-weather">
                 <!-- Temp, wind, humidity, UV index  -->
-                <div class="weather-card card border-dark mb-3" style="max-width:none">
+                <div class="weather-card card border-dark me-3 mb-3">
                     <div class="card-body text-dark">
-                      <span class="card-title fs-2 location-date">Enter a city name into the search bar to get the current weather and a 5 day forcast</span><span><img class="img-fluid weather-icon"></span>
-                      
+                        <h3 class="card-title text-center fs-2 location-date">Welcome! Enter a city name into the search bar to get the weather forcast for that city</h3>
+                        <span><img class="img-fluid rounded weather-icon"></span>
                       <p class="card-text current-temp">Temp: </p>
                       <p class="card-text current-wind">Wind: </p>
                       <p class="card-text current-humidity">Humidity: </p>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="future-weather row">
+            <div class="d-flex future-weather justify-content-between me-3">
                 <h4>5 Day Forcast: </h4>
                    
             </div>

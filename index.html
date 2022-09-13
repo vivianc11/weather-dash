@@ -13,49 +13,44 @@
 <body>
     <header>
         <h1 class="text-center text-white bg-primary bg-gradient">Weather Dashboard</h1>
+        <h2 class="current-date text-center"></h2>
     </header>
 
     <section class="row">
-        <section class="search-column col-3 border border-4">
-            <h2>Search for a City: </h2>
+        <section class="search-column col-3 border-end border-3">
+            <h3 class="">Search for a City: </h3>
             <form>
                 <label for="search"></label>
                 <input class='input-group' id='city-input' type="text" name="search" placeholder="San Diego">
             </form>
-            <button class="btn btn-primary search-btn" type="submit">Search</button>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary my-2 search-btn" type="submit">Search</button>
+            </div>
 
             <div>
+                <p>Search History: </p>
                 <ul class="search-history">
                 <!-- Where the search history will populate  -->
                 </ul>
             </div>
         </section>
 
-        <section class="weather-info col-9 border border-4">
+        <section class="weather-info col-9">
             <div class="current-weather">
                 <!-- Temp, wind, humidity, UV index  -->
-                <div class="card border-dark mb-3" style="max-width;">
+                <div class="weather-card card border-dark mb-3" style="max-width:none">
                     <div class="card-body text-dark">
-                      <h2 class="card-title location-date">Dark card title </h2>
-                      <img class="weather-icon" alt="weather icon">
-                      <p class="card-text current-temp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <p class="card-text current-wind"></p>
-                      <p class="card-text current-humidity"></p>
-                      <p class="card-text current-UV"></p>
+                      <span class="card-title fs-2 location-date">Enter a city name into the search bar to get the current weather and a 5 day forcast</span><span><img class="img-fluid weather-icon"></span>
+                      
+                      <p class="card-text current-temp">Temp: </p>
+                      <p class="card-text current-wind">Wind: </p>
+                      <p class="card-text current-humidity">Humidity: </p>
+                      <p class="card-text">UV: <span class="current-UV rounded p-2"></span></p>
                     </div>
                 </div>
             </div>
             <div class="future-weather row">
-                <!-- Temp, wind, humidity  -->
-                <!-- <div class="card border-dark mx-3 col-2" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-dark">
-                      <img src="" alt="weather icon">
-                      <p class="card-text temp">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <p class="card-text wind"></p>
-                      <p class="card-text humidity"></p>
-                    </div>
-                </div> -->
+                <h4>5 Day Forcast: </h4>
                    
             </div>
         </section>

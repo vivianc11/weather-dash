@@ -10,7 +10,7 @@ var currentWind = document.querySelector('.current-wind');
 var currentHumidity = document.querySelector('.current-humidity');
 var currentUV = document.querySelector('.current-UV');
 var weatherIcon = document.querySelector('.weather-icon');
-var myKey = config.MY_KEY;
+var myKey = 'f0877b3282711bd2ec8d3b92f3042057';
 
 // Creating an element and setting attribute
 var historyBtn = document.createElement('button');
